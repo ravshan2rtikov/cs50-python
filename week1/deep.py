@@ -6,8 +6,10 @@ def main():
     else:
         print("No")
 
+
 def answer(forty2):
     answer = ["42", "forty two", "forty-two"]
     return True if forty2 in answer else False
+
 
 main()
