@@ -7,8 +7,11 @@ distances = {
 }
 
 def main():
-    for name in distances.keys():
-        print(f"{name} is {distances[name]} AU from Earth")
+    for distance in distances.values():
+        print(f"{distance} AU is {convert(distance)} m")
+
+def convert(au):
+    return au * 149597870700
 
 main()
 
